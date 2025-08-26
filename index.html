@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTS — História, Galeria e Contato</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header-hero">
+    <nav class="container d-flex justify-content-between align-items-center py-3">
+      <div class="d-flex align-items-center gap-2">
+        <img src="img/logo.png" class="nav-img" alt="Logotipo BTS" width="44" height="44" />
+        <strong class="brand">BTS</strong>
+      </div>
+
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-light fw-bold" aria-expanded="false" aria-controls="opcoes-acessibilidade">
+          <i class="bi bi-universal-access-circle me-1"></i> Acessibilidade
+        </button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade" hidden>
+          <button id="aumentar-fonte" class="btn btn-outline-light fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+          <button id="diminuir-fonte" class="btn btn-outline-light fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+          <button id="alterna-contraste" class="btn btn-outline-light fw-bold" aria-label="Alternar o contraste de cores" title="Alto contraste">
+            <i class="bi bi-shadows"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="inicio" class="hero container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <h1 class="display-4 fw-bold lh-1">Bem-vindo ao universo <span class="highlight">BTS</span></h1>
+          <p class="lead mt-3">Conheça a história, os marcos e um pouco da estética que transformou o grupo em um fenômeno global.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#historia" class="btn btn-primary btn-lg rounded-pill">Explorar a História</a>
+            <a href="#galeria" class="btn btn-outline-light btn-lg rounded-pill">Ver Galeria</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 text-center">
+          <img src="img/bts_inicio.png" alt="Arte temática roxa do BTS" class="img-fluid rounded-4 shadow-lg border-0" />
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container my-5">
+    <!-- HISTÓRIA -->
+    <section id="historia" class="my-5 section-card" tabindex="0" aria-label="Seção com a história do BTS">
+      <div class="row align-items-center g-4">
+        <div class="col-md-5 text-center">
+          <img src="img/bts_historia.png" class="img-fluid rounded-4 shadow-lg" alt="Imagem ilustrativa da história do BTS">
+        </div>
+        <div class="col-md-7">
+          <h2 class="mb-3">Quem é o BTS?</h2>
+          <p>
+            BTS é um grupo sul-coreano formado pela Big Hit Music em 2013. Os membros são RM, Jin, SUGA, j-hope,
+            Jimin, V e Jung Kook. Combinando hip-hop, pop e mensagens sobre juventude, saúde mental e esperança,
+            o grupo alcançou uma base global de fãs (ARMY) e quebrou inúmeros recordes.
+          </p>
+          <p>
+            A discografia percorre eras marcantes — do <em>School Trilogy</em> ao <em>Love Yourself</em>, passando por
+            <em>Map of the Soul</em>. Em apresentações e projetos, o BTS destaca a autenticidade artística, performance
+            de alto nível e impacto cultural.
+          </p>
+          <p class="mb-0">
+            Desde 2022, os integrantes também desenvolvem projetos individuais e cumprem obrigações militares, com planos
+            de retomada das atividades em grupo após esse período.
+          </p>
+          <a href="#galeria" class="btn btn-primary mt-3 rounded-pill">Ir para a Galeria</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="my-5" tabindex="0" aria-label="Seção de galeria de imagens">
+      <h2 class="text-center mb-4">Galeria</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4">
+          <figure class="gallery-card">
+            <img src="img/bts1.jpg" class="img-fluid rounded-4" alt="Arte 1 temática roxa" loading="lazy">
+          </figure>
+        </div>
+        <div class="col-6 col-md-4">
+          <figure class="gallery-card">
+            <img src="img/bts2.jpg" class="img-fluid rounded-4" alt="Arte 2 temática roxa" loading="lazy">
+          </figure>
+        </div>
+        <div class="col-6 col-md-4">
+          <figure class="gallery-card">
+            <img src="img/bts3.jpg" class="img-fluid rounded-4" alt="Arte 3 temática roxa" loading="lazy">
+          </figure>
+        </div>
+        <div class="col-6 col-md-4">
+          <figure class="gallery-card">
+            <img src="img/bts4.jpg" class="img-fluid rounded-4" alt="Arte 4 temática roxa" loading="lazy">
+          </figure>
+        </div>
+        <div class="col-6 col-md-4">
+          <figure class="gallery-card">
+            <img src="img/bts5.jpg" class="img-fluid rounded-4" alt="Arte 5 temática roxa" loading="lazy">
+          </figure>
+        </div>
+        <div class="col-6 col-md-4">
+          <figure class="gallery-card">
+            <img src="img/bts6.jpg" class="img-fluid rounded-4" alt="Arte 6 temática roxa" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="my-5">
+      <div class="container p-4 p-md-5 rounded-4 formulario">
+        <h2 class="mb-3">Entre em contato</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Digite seu nome completo">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Digite seu email">
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form-control rounded-4" rows="4" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-4 fst-italic footer-grad">
+    <p class="mb-1">Acesse nossas redes:</p>
+    <div class="fs-3">
+      <i class="bi bi-whatsapp me-3" aria-label="WhatsApp"></i>
+      <i class="bi bi-instagram me-3" aria-label="Instagram"></i>
+      <i class="bi bi-tiktok" aria-label="TikTok"></i>
+    </div>
+    <p class="mt-3 mb-0 small">Projeto fictício sem fins comerciais. Conteúdo meramente ilustrativo.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
